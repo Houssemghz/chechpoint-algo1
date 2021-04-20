@@ -1,0 +1,20 @@
+ALGORITHM COUNT
+VAR
+    C:CHAR ;
+    v:INTEGER:=0;
+    l,w:INTEGER:=1;
+BEGIN
+        read (C)
+    WHILE (c <> '.') DO
+        l=l+1;
+        IF (c=' ') THEN
+            w=w+1;
+        END_IF
+        IF ( ToLower(C) in ['a','e','i','o','u','y']) THEN
+            v=v+1;
+        END_IF
+        read (C)
+    END_WHILE
+        write ('there is a 'l' letter and 'w' word and 'v' vowels in this sentence')
+    
+END
